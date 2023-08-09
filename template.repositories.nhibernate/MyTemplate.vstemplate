@@ -1,0 +1,34 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>template.repositories.nhibernate</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>template.repositories.nhibernate</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="template.repositories.nhibernate.csproj" File="template.repositories.nhibernate.csproj" ReplaceParameters="true">
+      <Folder Name="extenders" TargetFolderName="extenders">
+        <ProjectItem ReplaceParameters="true" TargetFileName="SortingCriteriaExtender.cs">SortingCriteriaExtender.cs</ProjectItem>
+      </Folder>
+      <Folder Name="mappers" TargetFolderName="mappers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationRoleMapper.cs">ApplicationRoleMapper.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationUserMapper.cs">ApplicationUserMapper.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationRolesRepository.cs">ApplicationRolesRepository.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationUsersRepository.cs">ApplicationUsersRepository.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="DaoQuery.cs">DaoQuery.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Repository.cs">Repository.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="SessionFactory.cs">SessionFactory.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="UnitOfWork.cs">UnitOfWork.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

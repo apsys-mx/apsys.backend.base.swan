@@ -1,0 +1,24 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>apsys.ndbunit.netcore</Name>
+    <Description>&lt;No hay ninguna descripción disponible&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>apsys.ndbunit.netcore</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="apsys.ndbunit.netcore.csproj" File="apsys.ndbunit.netcore.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="INDbUnit.cs">INDbUnit.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="NDbUnit.cs">NDbUnit.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="SqlClienteNDbUnit.cs">SqlClienteNDbUnit.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

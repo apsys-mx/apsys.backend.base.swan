@@ -1,0 +1,39 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>apsys.dynamic.filters</Name>
+    <Description>Engine for create dynamic filters in repositories</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>apsys.dynamic.filters</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="apsys.dynamic.filters.csproj" File="apsys.dynamic.filters.csproj" ReplaceParameters="true">
+      <Folder Name="exceptions" TargetFolderName="exceptions">
+        <ProjectItem ReplaceParameters="true" TargetFileName="InvalidFieldNameException.cs">InvalidFieldNameException.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="InvalidQueryStringArgumentException.cs">InvalidQueryStringArgumentException.cs</ProjectItem>
+      </Folder>
+      <Folder Name="extenders" TargetFolderName="extenders">
+        <ProjectItem ReplaceParameters="true" TargetFileName="StringExtender.cs">StringExtender.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="FilterExpressionParser.cs">FilterExpressionParser.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="FilterOperator.cs">FilterOperator.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ISearchQuery.cs">ISearchQuery.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ISearchResult.cs">ISearchResult.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="QueryStringParser.cs">QueryStringParser.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="QuickSearch.cs">QuickSearch.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="RelationalOperator.cs">RelationalOperator.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="SearchQuery.cs">SearchQuery.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="SearchResult.cs">SearchResult.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Sorting.cs">Sorting.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="SortingDirection.cs">SortingDirection.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

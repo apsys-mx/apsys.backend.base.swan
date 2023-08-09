@@ -1,0 +1,28 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>template.services</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>template.services</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="template.services.csproj" File="template.services.csproj" ReplaceParameters="true">
+      <Folder Name="users" TargetFolderName="users">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationUserProfileSearcher.cs">ApplicationUserProfileSearcher.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationUsersGetter.cs">ApplicationUsersGetter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IdentityUserProfileSearcher.cs">IdentityUserProfileSearcher.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationInitializer.cs">ApplicationInitializer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="RequestBase.cs">RequestBase.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

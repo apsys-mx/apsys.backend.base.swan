@@ -1,0 +1,27 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>template.migrations</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>template.migrations</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="template.migrations.csproj" File="template.migrations.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="M001_Sandbox.cs">M001_Sandbox.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="M002_CreateApplicationUsersTable.cs">M002_CreateApplicationUsersTable.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="M003_CreateAuthorizationTables.cs">M003_CreateAuthorizationTables.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="rollback.bat">rollback.bat</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="runmigrations.bat">runmigrations.bat</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

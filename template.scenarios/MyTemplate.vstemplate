@@ -1,0 +1,28 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>template.scenarios</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>template.scenarios</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="template.scenarios.csproj" File="template.scenarios.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="IScenario.cs">IScenario.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="SC001_CreateSandBox.cs">SC001_CreateSandBox.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="SC002_InitializeApplication.cs">SC002_InitializeApplication.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ScenarioBuilder.cs">ScenarioBuilder.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ScenarioNameAttribute.cs">ScenarioNameAttribute.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

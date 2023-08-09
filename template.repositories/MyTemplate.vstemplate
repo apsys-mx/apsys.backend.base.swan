@@ -1,0 +1,31 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>template.repositories</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>template.repositories</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="template.repositories.csproj" File="template.repositories.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="AppSchema.xsd">AppSchema.xsd</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AppSchema.Designer.cs">AppSchema.Designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="AppSchema.xsc">AppSchema.xsc</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="AppSchema.xss">AppSchema.xss</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="IApplicationRolesRepository.cs">IApplicationRolesRepository.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="IApplicationUsersRepository.cs">IApplicationUsersRepository.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="IDaoQuery.cs">IDaoQuery.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="IRepository.cs">IRepository.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="IUnitOfWork.cs">IUnitOfWork.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="SortingCriteria.cs">SortingCriteria.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

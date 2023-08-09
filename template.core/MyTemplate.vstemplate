@@ -1,0 +1,47 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>template</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>template</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="template.csproj" File="template.csproj" ReplaceParameters="true">
+      <Folder Name="authorization" TargetFolderName="authorization">
+        <Folder Name="daos" TargetFolderName="daos">
+          <ProjectItem ReplaceParameters="true" TargetFileName="IdentityUserDao.cs">IdentityUserDao.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationRole.cs">ApplicationRole.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationRoles.cs">ApplicationRoles.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationUser.cs">ApplicationUser.cs</ProjectItem>
+      </Folder>
+      <Folder Name="contracts" TargetFolderName="contracts">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ISerializable.cs">ISerializable.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ITestable.cs">ITestable.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IValidable.cs">IValidable.cs</ProjectItem>
+      </Folder>
+      <Folder Name="dtos" TargetFolderName="dtos">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationUserDto.cs">ApplicationUserDto.cs</ProjectItem>
+      </Folder>
+      <Folder Name="exceptions" TargetFolderName="exceptions">
+        <ProjectItem ReplaceParameters="true" TargetFileName="InvalidDomainException.cs">InvalidDomainException.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="OperationNotAllowedException.cs">OperationNotAllowedException.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ResourceNotFoundException.cs">ResourceNotFoundException.cs</ProjectItem>
+      </Folder>
+      <Folder Name="validators" TargetFolderName="validators">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationRoleValidator.cs">ApplicationRoleValidator.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationUserValidator.cs">ApplicationUserValidator.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AbstractDomainObject.cs">AbstractDomainObject.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

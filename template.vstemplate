@@ -1,0 +1,66 @@
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>ApsysUsersTemplate</Name>
+		<Description>Proyecto base Apsys con estructura de usuarios</Description>
+		<Icon>__TemplateIcon.png</Icon>
+		<ProjectType>VisualBasic</ProjectType>
+		<LanguageTag>C#</LanguageTag>
+		<PlatformTag>Windows</PlatformTag>
+		<ProjectTypeTag>Web</ProjectTypeTag>
+	</TemplateData>
+	<TemplateContent>
+		<CustomParameters>
+		  <CustomParameter Name="$SolutionName$" Value="$safeprojectname$"/>
+		</CustomParameters>
+		<ProjectCollection>
+			<SolutionFolder Name="00.thirdparty">
+				<ProjectTemplateLink ProjectName="apsys.dynamic.filters" CopyParameters="true">
+					apsys.dynamic.filters\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="apsys.ndbunit.netcore" CopyParameters="true">
+					apsys.ndbunit.netcore\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$safeprojectname$.scenarios" CopyParameters="true">
+					template.scenarios\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+			</SolutionFolder>
+			<SolutionFolder Name="01.domain">
+				<ProjectTemplateLink ProjectName="$safeprojectname$" CopyParameters="true">
+					template.core\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$safeprojectname$.testing" CopyParameters="true">
+					template.core.testing\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+			</SolutionFolder>
+			<SolutionFolder Name="02.data">
+				<ProjectTemplateLink ProjectName="$safeprojectname$.repositories" CopyParameters="true">
+					template.repositories\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$safeprojectname$.repositories.nhibernate" CopyParameters="true">
+					template.repositories.nhibernate\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$safeprojectname$.repositories.nhibernate.testing" CopyParameters="true">
+					ut.repositories.nhibernate.testing\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$safeprojectname$.migrations" CopyParameters="true">
+					template.migrations\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+			</SolutionFolder>
+			<SolutionFolder Name="03.services">
+				<ProjectTemplateLink ProjectName="$safeprojectname$.services" CopyParameters="true">
+					template.services\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+				<ProjectTemplateLink ProjectName="$safeprojectname$.services.testing" CopyParameters="true">
+					template.services.testing\MyTemplate.vstemplate
+				</ProjectTemplateLink>
+			</SolutionFolder>
+			<ProjectTemplateLink ProjectName="$safeprojectname$.webapi" CopyParameters="true">
+				template.webapi\MyTemplate.vstemplate
+			</ProjectTemplateLink>
+			<ProjectTemplateLink ProjectName="$safeprojectname$.webapi.testing" CopyParameters="true">
+				template.webapi.testing\MyTemplate.vstemplate
+			</ProjectTemplateLink>
+		</ProjectCollection>
+	</TemplateContent>
+</VSTemplate>
